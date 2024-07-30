@@ -22,7 +22,7 @@
     "require": {
         "illuminate/http": "^9.35|^10.5|^11.0",
         "illuminate/support": "^9.35|^10.5|^11.0",
-        "rennokki/laravel-sns-events": "^7.2"
+        "rennokki/laravel-sns-events": "dev-laravel-11-upgrade"
     },
     "autoload": {
         "psr-4": {
@@ -37,6 +37,12 @@
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/RedSnapper/laravel-sns-events"
+        }
+    ],
     "require-dev": {
         "mockery/mockery": "^1.5",
         "orchestra/testbench": "^7.23|^8.1.1|^9.0",
